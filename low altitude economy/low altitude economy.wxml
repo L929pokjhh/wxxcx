@@ -1,0 +1,184 @@
+<!--pages/low altitude economy.wxml-->
+<!-- pages/low-altitude-economy/low-altitude-economy.wxml -->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="title">同心济世博士联盟-低空经济专委会</view>
+    <view class="title">服务清单</view>
+  </view>
+  
+  <!-- 第一部分：公益推广培训课程 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（一）公益推广培训课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">课程名称</view>
+        <view class="col-3" style="width: 200rpx; display: flex; box-sizing: border-box">时长</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">低空经济"十五五"规划及专项政策研究</view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box"></view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第二部分：市场服务 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（二）市场服务</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">服务专项</view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">低空经济基金与融资顾问</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">低空物流、载人、空管领域合作</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">保险：机身险、第三方责任险、城市级风险池</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">海外适航认证、双边互认谈判支持</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">海外低空经济园区共建</text>
+          </view>
+          <view class="service-subtitle">高端人才与培训</view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">博士后工作站共建、博士团柔性挂职</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">CAAC/EASA 适航委任代表（DER）培训</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">青少年无人机/STEAM 研学、产业领军人才研修班</text>
+          </view>
+        </view>
+        <view class="col-3" style="width: 220rpx; display: flex; box-sizing: border-box">专门项目</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第三部分：项目咨询与服务清单 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（三）项目咨询与服务清单</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">项目名称</view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box">服务形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">空域分类分级、航线划设、运行规则设计</view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 220rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">产业链全景图（eVTOL、无人机、起降平台、通导监、运营服务、金融保险）</view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 220rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">城市级低空数字孪生与风险仿真</view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 220rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">4</view>
+        <view class="col-2">重大活动、灾害场景下的应急无人机调度预案</view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 220rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 110rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">5</view>
+        <view class="col-2">
+          <view class="service-subtitle">低空+场景一体化解决方案</view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">物流：医疗急救、海岛/山区、同城即时配</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">巡检：电网、油气、交通、水利、光伏</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">文旅：空中观光、景区接驳、灯光秀</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">公共服务：警用、消防、应急测绘、环保监测</text>
+          </view>
+          
+          <view class="service-subtitle">起降网络与新型基础设施规划</view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">Vertiport/Droneport 选址、容量仿真、BIM 设计</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">5G/北斗/卫星融合通信导航监视（CNS）方案</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">能源补给：高功率快充、氢能、换电、光伏微网</text>
+          </view>
+          
+          <view class="service-subtitle">适航与标准认证直通车</view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">eVTOL/大型无人机适航取证路径（TC→PC→AC）</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">民航局、EASA、FAA 三地并行认证策略</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">配套实验室能力建设（风洞、电磁兼容、电池安全）</text>
+          </view>
+          
+          <view class="service-subtitle">低空运营与数字化平台</view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">城市级低空运行管理（LAAS）平台开发</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">航线动态定价、运力撮合、空域拍卖算法</text>
+          </view>
+          <view class="service-item">
+            <text class="bullet">•</text>
+            <text class="service-text">低空经济数据要素登记、交易与增值运营</text>
+          </view>
+        </view>
+        <view class="col-3"style="width: 191rpx; display: flex; box-sizing: border-box" style="width: 220rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    <text>同心济世博士联盟-低空经济专业委员会 © 2025</text>
+  </view>
+</view>

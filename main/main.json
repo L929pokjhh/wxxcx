@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "同心济世博士联盟",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#87CEEB",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "backgroundColorTop": "#87CEEB",
+    "backgroundColorBottom": "#98FB98"
+  }

@@ -1,0 +1,117 @@
+<!--register.wxml-->
+<view class="container">
+  <view class="register-form">
+    <view class="form-title">注册</view>
+    
+    <!-- 姓名 -->
+    <view class="form-group">
+      <label class="form-label required">姓名</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入" bindinput="onNameInput" value="{{formData.name}}" />
+    </view>
+    
+    <!-- 性别 -->
+    <view class="form-group">
+      <label class="form-label">性别</label>
+      <radio-group class="gender-group" bindchange="onGenderChange">
+        <label class="radio-label">
+          <radio value="male" checked="{{formData.gender=='male'}}" />男
+        </label>
+        <label class="radio-label">
+          <radio value="female" checked="{{formData.gender=='female'}}" />女
+        </label>
+      </radio-group>
+    </view>
+
+    <!-- 联系方式 -->
+    <view class="form-group">
+      <label class="form-label required">联系方式</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入手机号码" bindinput="onPhoneInput" value="{{formData.phone}}" type="number" />
+    </view>
+
+    <!-- 出生时间 -->
+    <view class="form-group">
+      <label class="form-label">出生时间</label>
+      <picker mode="date" value="{{formData.birthDate}}" bindchange="onBirthDateChange">
+        <view class="picker-view" style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box">{{formData.birthDate || '请选择出生日期'}}</view>
+      </picker>
+    </view>
+
+    <!-- 毕业院校 -->
+    <view class="form-group">
+      <label class="form-label required">毕业院校</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入" bindinput="onSchoolInput" value="{{formData.school}}" />
+    </view>
+
+    <!-- 毕业时间 -->
+    <view class="form-group">
+      <label class="form-label">毕业时间</label>
+      <picker mode="date" value="{{formData.graduateDate}}" bindchange="onGraduateDateChange">
+        <view class="picker-view">{{formData.graduateDate || '请选择毕业日期'}}</view>
+      </picker>
+    </view>
+
+    <!-- 专业 -->
+    <view class="form-group">
+      <label class="form-label required">专业</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入" bindinput="onMajorInput" value="{{formData.major}}" />
+    </view>
+
+
+    
+
+    <!-- 内部推荐码 -->
+    <view class="form-group">
+      <label class="form-label">推荐人</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入推荐人（选填)" bindinput="onReferralCodeInput" value="{{formData.referralCode}}" />
+    </view>
+
+    <!-- 工作单位 -->
+    <view class="form-group">
+      <label class="form-label required">工作单位</label>
+      <input style="width: 600rpx; height: 80rpx; display: block; box-sizing: border-box" class="form-input" placeholder="请输入" bindinput="onWorkUnitInput" value="{{formData.workUnit}}" />
+    </view>
+
+    <!-- 学历信息上传 -->
+    <view class="form-group">
+      <label class="form-label">学历信息上传</label>
+      <button class="upload-btn" bindtap="chooseImage">
+        {{uploadedImage ? '重新上传' : '点击上传学历证明'}}
+      </button>
+      <view wx:if="{{uploadedImage}}" class="uploaded-image">
+        <image src="{{uploadedImage}}" mode="aspectFit" />
+      </view>
+    </view>
+
+    <!-- 按钮组 -->
+    <view class="form-buttons">
+      <button class="btn-secondary" bindtap="onCancel">取消</button>
+      <button class="btn-primary" bindtap="showPrivacyModal" loading="{{isSubmitting}}">
+        {{isSubmitting ? '注册中...' : '注册'}}
+      </button>
+    </view>
+
+    <!-- 隐私政策弹窗 -->
+    <view wx:if="{{showPrivacyModal}}" class="privacy-modal-mask">
+      <view class="privacy-modal">
+        <view class="privacy-header">
+          <text class="privacy-title">隐私政策告知</text>
+        </view>
+        <view class="privacy-content">
+          <text class="privacy-text">
+            感谢您选择注册同心济世博士联盟。我们非常重视您的个人信息保护，特此向您说明：
+            
+            1. 我们将收集您提供的姓名、联系方式、学历等必要信息用于会员资格审核
+            2. 您的信息将严格保密，仅用于联盟内部管理和服务
+            3.  我们承诺不会将您的信息用于商业推广或提供给第三方
+            
+            请仔细阅读以上内容，如您同意，请点击"同意并注册"按钮继续。
+          </text>
+        </view>
+        <view class="privacy-buttons">
+          <button class="privacy-btn-secondary" bindtap="disagreePrivacyPolicy">不同意</button>
+          <button class="privacy-btn-primary" bindtap="agreePrivacyPolicy">同意并注册</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

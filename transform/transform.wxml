@@ -1,0 +1,122 @@
+<!--transform.wxml-->
+<view class="container">
+  <!-- 搜索框 
+  <view class="search-section">
+    <view class="search-bar">
+      <text class="search-icon">🔍</text>
+      <input class="search-input" placeholder="请输入关键字" bindinput="onSearchInput" value="{{searchText}}" bindconfirm="performSearch"/>
+      <text class="clear-icon" wx:if="{{searchText}}" bindtap="clearSearch">✕</text>
+    </view>
+  </view>-->
+
+  <!-- 科技成果转化中心介绍 -->
+  <view class="tech-center-section">
+    <!-- 页面头部 -->
+    <view class="header">
+      <view class="main-title">科技成果转化中心</view>
+      <view class="main-title">(概念验证中心)</view>
+      <view class="sub-title">以技术链接产学，以攻关服务企业</view>
+    </view>
+
+    <!-- 核心内容模块 -->
+    <view class="content-section">
+      <!-- 战略定位 -->
+      <view class="module">
+        <view class="module-title">战略定位</view>
+        <view class="module-content">
+          <text class="content-item">与同心济世求是书院、秘书处一同作为联盟核心支撑机构，形成"三驾马车"协同运行模式。</text>
+        </view>
+      </view>
+
+      <!-- 核心职能 -->
+      <view class="module">
+        <view class="module-title">核心职能</view>
+        <view class="module-content">
+          <text class="content-item">双核心职能:</text>
+          <text class="content-item">正向转化:挖掘技术成果，推动产业化落地</text>
+          <text class="content-item">反向攻关:针对技术需求，组织专家团队攻关</text>
+        </view>
+      </view>
+
+      <!-- 协同机制 -->
+      <view class="module">
+        <view class="module-title">协同机制</view>
+        <view class="module-content">
+          <text class="content-item">双向驱动:书院(思想传播)与技术转化中心(实践服务)互补，形成"认知+行动"闭环。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+  <!-- 科技成果转化项目展示 -->
+  <view class="achievement-section">
+    <view class="section-header">
+      <text class="section-title">科技成果转化项目展示</text>
+      <text class="more-link" bindtap="viewMoreInfo">更多信息</text>
+    </view>
+    
+    <view class="achievement-list">
+      <view 
+        class="achievement-card" 
+        wx:for="{{achievements}}" 
+        wx:key="id"
+        wx:for-index="index"
+        bindtap="showAchievementModal"
+        data-index="{{index}}"
+      >
+        <image 
+          class="achievement-image" 
+          src="{{item.image}}" 
+          mode="aspectFill"
+          lazy-load="{{true}}"
+          binderror="onImageError"
+          data-type="achievement"
+          data-index="{{index}}"
+        />
+        <view class="achievement-content">
+          <view class="achievement-title">{{item.title}}</view>
+          <text class="achievement-description">{{item.description}}</text>
+          <view class="achievement-tags" wx:if="{{item.tags}}">
+            <text class="tag" wx:for="{{item.tags}}" wx:key="*this" wx:for-item="tag">{{tag}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 科技成果详情弹窗 -->
+  <view class="modal-mask {{showAchievementModal ? 'active' : ''}}" bindtap="hideAchievementModal" wx:if="{{showAchievementModal}}" catchtouchmove="stopPropagation">
+    <view class="modal-dialog achievement-dialog" catchtap="stopPropagation" catchtouchmove="stopPropagation">
+      <view class="modal-header">
+        <text class="modal-title">{{currentAchievement.title}}</text>
+      </view>
+      <view class="modal-content">
+        <scroll-view class="modal-scroll" scroll-y catchtouchmove="stopPropagation">
+          <image class="modal-image" src="{{currentAchievement.image}}" mode="aspectFit" binderror="onModalImageError"></image>
+          <view class="achievement-unit" wx:if="{{currentAchievement.unit}}">
+            <text class="unit-label">项目单位：</text>
+            <text class="unit-text">{{currentAchievement.unit}}</text>
+          </view>
+          <view class="modal-description">
+            <text class="description-text">{{currentAchievement.description}}</text>
+          </view>
+          <view class="achievement-tags" wx:if="{{currentAchievement.tags}}">
+            <text class="tag" wx:for="{{currentAchievement.tags}}" wx:key="*this" wx:for-item="tag">{{tag}}</text>
+          </view>
+          <view class="contact-info" wx:if="{{currentAchievement.contact}}">
+            <text class="contact-label">联系方式：</text>
+            <text class="contact-text">{{currentAchievement.contact}}</text>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="modal-footer">
+        <button class="modal-btn btn-close" bindtap="hideAchievementModal">关闭</button>
+        <button class="modal-btn btn-contact" bindtap="contactAchievement">联系项目</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部占位 -->
+  <view class="bottom-placeholder"></view>
+</view>

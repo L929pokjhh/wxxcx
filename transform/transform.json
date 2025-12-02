@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "科技成果转化中心",
+  "navigationBarBackgroundColor": "#87CEEB",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f8f9fa",
+  "enablePullDownRefresh": true
+}

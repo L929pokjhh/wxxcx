@@ -1,0 +1,79 @@
+<!-- 页面结构 -->
+<view class="container">
+  <!-- 加载状态 -->
+  <view wx:if="{{loading}}" class="loading-container">
+    <text class="loading-text">加载中...</text>
+  </view>
+
+  <!-- 活动列表 -->
+  <view wx:else class="activity-list">
+    <!-- 动态活动列表 -->
+    <view wx:for="{{activities}}" wx:key="id" wx:if="{{item.show !== false}}" class="activity-item" bindtap="showModal" data-id="{{item.id}}" data-type="{{item.type}}">
+      <!-- 白色背景容器包含图片和标题 -->
+      <view class="activity-header">
+        <image 
+          class="activity-image" 
+          src="{{item.image}}" 
+          mode="aspectFill"
+          binderror="onImageError"
+          data-index="{{index}}"
+        />
+        <text class="activity-title">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 弹框结构 -->
+<view class="modal-mask {{modalVisible ? 'active' : ''}}" bindtap="hideModal">
+  <view class="modal-content" catchtap="preventTap">
+    <!-- 动态活动弹框 -->
+    <view wx:for="{{activities}}" wx:key="id" wx:if="{{currentActivityType === item.type}}" class="modal-wrapper">
+      <view class="modal-header">
+        <view class="modal-title">{{item.title}}</view>
+        <view class="modal-info">时间：{{item.date}}</view>
+        <view class="modal-info">地点：{{item.location}}</view>
+      </view>
+      <view class="modal-body">
+        <image class="modal-image" src="{{item.image}}" mode="aspectFit" />
+        <view class="modal-text">
+          {{item.content}}
+        </view>
+        <!-- 相关链接区域 -->
+        <view wx:if="{{item.gzhlink}}" class="link-section">
+          <view class="link-title">相关链接</view>
+          <view class="link-item" bindtap="onLinkClick" data-link="{{item.gzhlink}}">
+            <text class="link-text">点击查看公众号文章</text>
+            <view class="link-arrow">→</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 默认弹框内容 -->
+    <view wx:if="{{!currentActivityType}}" class="modal-wrapper">
+      <view class="modal-header">
+        <view class="modal-title">活动详情</view>
+        <view class="modal-info">暂无活动信息</view>
+      </view>
+      <view class="modal-body">
+        <view class="modal-text">
+          请稍后再试或联系管理员。
+        </view>
+      </view>
+    </view>
+
+    <!-- 弹框按钮 -->
+    <view class="modal-footer">
+      <button class="btn btn-close" bindtap="hideModal">关闭</button>
+    </view>
+  </view>
+</view>
+
+<!-- 下拉刷新提示 -->
+<view wx:if="{{!loading}}" class="refresh-tip">
+  <text class="tip-text">下拉刷新获取最新活动</text>
+</view>
+
+
+

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/register/register",
+    "pages/example/index",
+    "pages/alliance/alliance",
+    "pages/committee/committee",
+    "pages/transform/transform",
+    "pages/automobile industry/automobile industry",
+    "pages/management consultancy/management consultancy",
+    "pages/artificial intelligence/artificial intelligence",
+    "pages/intelligent equipment/intelligent equipment",
+    "pages/new material/new material",
+    "pages/intelligent transportation/intelligent transportation",
+    "pages/intelligent agriculture/intelligent agriculture",
+    "pages/investment and financing/investment and financing",
+    "pages/low altitude economy/low altitude economy",
+    "pages/clean energy/clean energy",
+    "pages/biological medicine/biological medicine",
+    "pages/economic legal system/economic legal system",
+    "pages/latest activity/latest activity",
+    "pages/webview/webview",
+    "pages/Former site of Qiushi Academy/Former site of Qiushi Academy"  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "同心济世博士联盟",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

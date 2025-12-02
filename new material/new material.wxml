@@ -1,0 +1,151 @@
+<!--pages/new material.wxml-->
+<!-- pages/new-materials/new-materials.wxml -->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="title">同心济世博士联盟-新材料专委会</view>
+    <view class="title">服务清单</view>
+  </view>
+  
+  <!-- 第一部分：公益推广培训课程 -->
+  <view class="section">
+    <view class="section-title">（一）公益推广培训课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">课程名称</view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box">时长</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">《新材料基础科普》</view>
+          <view class="course-content">课程内容： 讲解新材料的定义与范畴，包括高性能复合材料、先进半导体材料、纳米材料、生物医用材料等类别。阐述新材料在现代科技、日常生活中的关键作用，如5G通信中的射频材料、新能源汽车的电池材料等。剖析新材料发展趋势，如材料的智能化、绿色化方向。</view>
+        </view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">《政策解读与产业趋势洞察》</view>
+          <view class="course-content">课程内容：梳理国家及地方对新材料产业的扶持政策，如研发补贴、税收优惠、产业基金支持等。分析全球新材料产业格局，解读国内外新材料企业的竞争态势与合作机遇。探讨新兴技术（如人工智能、量子技术）与新材料产业的融合趋势。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">《生活中的新材料应用》</view>
+          <view class="course-content">课程内容：介绍家居建材中的新型环保材料（如水性涂料、可降解塑料管材），日常电子产品中的高性能材料（如手机屏幕的OLED材料、芯片的光刻胶材料），以及运动装备中的轻量化、高强度材料（如碳纤维羽毛球拍、智能穿戴设备的柔性材料）。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第二部分：实战课程 -->
+  <view class="section">
+    <view class="section-title">（二）实战课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">服务专项</view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box">形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">《高性能复合材料制备与加工实战》</view>
+          <view class="course-content">课程内容：讲解碳纤维、玻璃纤维等增强体与树脂、金属等基体复合的工艺，包括预浸料制备、模压成型、缠绕成型等加工技术。进行复合材料性能测试与质量控制实践，如拉伸强度、弯曲强度测试，缺陷检测与修复。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">《半导体材料制造工艺实战》</view>
+          <view class="course-content">课程内容：硅片制造工艺实践，包括晶体生长、切片、抛光等环节操作。光刻、蚀刻、掺杂等半导体芯片制造关键工艺实操训练，以及半导体材料的电学性能测试与分析。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">《纳米材料合成与应用实战》</view>
+          <view class="course-content">课程内容：纳米颗粒、纳米管、纳米薄膜等纳米材料的化学合成与物理制备方法实操，如溶胶-凝胶法、化学气相沉积法。纳米材料在催化、传感器、生物医药等领域的应用实验，如纳米催化剂的制备与性能测试、纳米生物探针的构建。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">4</view>
+        <view class="col-2">
+          <view class="course-title">《生物医用材料研发与测试实战》</view>
+          <view class="course-content">课程内容：生物降解材料、组织工程支架材料、医用金属材料等生物医用材料的设计与合成实践。生物相容性测试方法实操，包括细胞毒性测试、溶血试验、动物体内植入实验。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">5</view>
+        <view class="col-2">
+          <view class="course-title">《3D打印材料与工艺实战》</view>
+          <view class="course-content">课程内容：3D打印常用材料（如工程塑料、金属粉末、光敏树脂）的特性与选择，材料的预处理与后处理工艺。各类3D打印技术（如熔融沉积成型、选择性激光烧结、光固化成型）的设备操作与参数优化实践。</view>
+        </view>
+        <view class="col-3"style="width: 160rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第三部分：项目咨询与服务清单 -->
+  <view class="section">
+    <view class="section-title">（三）项目咨询与服务清单</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1"style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">项目名称</view>
+        <view class="col-3"style="width: 190rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">服务形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">新材料项目可行性研究</view>
+          <view class="course-content">服务内容：对各类新材料研发与产业化项目进行技术可行性分析，评估项目所需技术的成熟度、研发难度。开展市场调研，分析目标市场需求、竞争态势、市场前景。进行经济可行性评估，包括项目投资预算、成本效益分析、投资回收期预测。出具详细的项目可行性研究报告。</view>
+        </view>
+        <view class="col-3"style="width: 190rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">企业材料升级解决方案咨询</view>
+          <view class="course-content">服务内容：深入企业生产一线，调研现有材料使用问题与需求。针对企业产品性能提升、成本降低、环保要求等目标，提供材料升级替代方案，包括新材料选型、工艺适配调整建议。协助企业进行新材料供应商筛选与合作谈判，跟踪方案实施效果并提供优化建议。</view>
+        </view>
+        <view class="col-3"style="width: 190rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">知识产权保护与运营咨询</view>
+          <view class="course-content">服务内容：为新材料企业进行知识产权评估，包括专利、商标、著作权等。制定知识产权保护策略，如专利布局规划、侵权风险预警。开展知识产权运营服务，包括专利许可、转让、作价入股等操作指导，协助企业挖掘知识产权商业价值。</view>
+        </view>
+        <view class="col-3"style="width: 190rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 120rpx; display: flex; box-sizing: border-box">4</view>
+        <view class="col-2">
+          <view class="course-title">新材料技术成果转化服务</view>
+          <view class="course-content">服务内容：收集高校、科研院所的新材料技术成果，进行筛选与评估。搭建成果供需对接平台，组织技术成果持有人与企业开展对接活动。协助双方进行技术转移谈判、合同签订，提供成果转化过程中的技术咨询、产业化指导等服务。</view>
+        </view>
+        <view class="col-3"style="width: 190rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    <text>同心济世博士联盟-新材料专委会 © 2025</text>
+  </view>
+</view>

@@ -1,0 +1,206 @@
+<!--main.wxml-->
+<view class="container" style="position: relative; left: 0rpx; top: -45rpx">
+  <!-- 搜索框 
+  <view class="search-section">
+    <view class="search-bar" style="position: relative; left: 0rpx; top: -156rpx">
+      <text class="search-icon">🔍</text>
+      <input class="search-input" placeholder="请输入关键字" bindinput="onSearchInput" value="{{searchText}}"/>
+      <text class="clear-icon" wx:if="{{searchText}}" bindtap="clearSearch">✕</text>
+    </view>
+  </view>-->
+
+  <!-- 功能卡片区域 -->
+  <view class="function-cards" style="position: relative; left: 0rpx; top: -118rpx">
+    <view class="card-row">
+      <view class="function-card card-green-blue" bindtap="navigateToPage" data-page="secretary">
+        <text class="card-title">秘书处</text>
+      </view>
+      <view class="function-card card-blue" bindtap="navigateToPage" data-page="committee">
+        <text class="card-title">专委会</text>
+      </view>
+    </view>
+    <view class="card-row">
+      <view class="function-card card-blue-green" bindtap="navigateToPage" data-page="transform">
+        <text class="card-title">转化中心</text>
+      </view>
+      <view class="function-card card-light-blue" bindtap="navigateToPage" data-page="Former site of Qiushi Academy">
+      <text class="card-title">求是书院</text>
+  </view>
+</view>
+ </view>
+  <!-- 活动详情 -->
+  <view class="activity-section" style="position: relative; left: 0rpx; top: -118rpx; display: block; box-sizing: border-box">
+    <view class="section-header">
+      <text class="section-title">最新活动</text>
+      <text class="more-link" bindtap="viewMoreActivities"data-page="latest activity">展示更多活动</text>
+    </view>
+   
+    <!-- 动态活动列表 -->
+    <view class="activity-container" wx:for="{{activities}}" wx:key="id" wx:if="{{item.display !== false}}">
+      <view class="{{index % 2 === 0 ? 'first-section' : 'second-section'}}" bindtap="showActivityModal" data-index="{{index}}" style="width: 654rpx;display: inline-block; box-sizing: border-box; position: relative; left: 1rpx; top: 20rpx">
+        <view class="{{index % 2 === 0 ? 'first2' : 'second2'}}" style="width: 654rpx; display: block; box-sizing: border-box">
+          <image class="activity-image" src="{{item.image}}"></image>
+          <text class="activity-title">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    
+    <text class="hint-text" wx:if="{{activities && activities.length > 0}}">点击上方卡片查看活动详情</text>
+    
+    <!-- 活动详情弹窗 -->
+    <view class="modal-mask {{showActivityModal ? 'active' : ''}}" bindtap="hideActivityModal">
+      <view class="modal-dialog" catchtap="stopPropagation">
+        <view class="modal-header">
+          <text class="modal-title">{{currentActivity.title}}</text>
+        </view>
+        <view class="modal-content">
+          <scroll-view class="modal-scroll" scroll-y catchtouchmove="stopPropagation">
+            <view class="info-item">
+              <text class="info-label">时间：</text>
+              <text class="info-text">{{currentActivity.date}}</text>
+            </view>
+            <view class="info-item">
+              <text class="info-label">地点：</text>
+              <text class="info-text">{{currentActivity.location}}</text>
+            </view>
+            <view class="modal-text info-item" style="margin-top: 30rpx;">
+              {{currentActivity.content}}
+            </view>
+            <view class="link-item" wx:if="{{currentActivity.gzhlink}}">
+              <text class="link-label">相关链接：</text>
+              <view class="activity-link" bindtap="openActivityLink">
+                <text class="link-text">点击查看详情</text>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+        <view class="modal-footer">
+          <button class="modal-btn btn-close" bindtap="hideActivityModal">关闭</button>
+          <button class="modal-btn btn-signup" bindtap="showSignupModal">我要报名</button>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 报名表单弹窗 -->
+    <view class="modal-mask {{showSignupModal ? 'active' : ''}}" bindtap="hideSignupModal" wx:if="{{showSignupModal}}">
+      <view class="modal-dialog signup-dialog" catchtap="stopPropagation">
+        <view class="modal-header">
+          <text class="modal-title">活动报名</text>
+        </view>
+        <view class="modal-content">
+          <view class="form-item">
+            <text class="form-label">姓名</text>
+            <input class="form-input" placeholder="请输入姓名" value="{{name}}" bindinput="onNameInput" />
+          </view>
+          <view class="form-item">
+            <text class="form-label">手机号</text>
+            <input class="form-input" type="number" placeholder="请输入手机号" value="{{phone}}" bindinput="onPhoneInput" />
+          </view>
+        </view>
+        <view class="modal-footer">
+          <button class="modal-btn btn-close" bindtap="hideSignupModal">取消</button>
+          <button class="modal-btn btn-signup" bindtap="submitSignup">提交报名</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 更多信息 -->
+  <view class="info-section" style="position: relative; left: 0rpx; top: -118rpx">
+    <text class="section-title">更多信息</text>
+    <view class="info-item" bindtap="viewTalentProgram">
+      <image class="info-image" src="{{moreInfoImage}}" mode="aspectFill"/>
+      <view class="info-content">
+        <text class="info-title">{{moreInfoTitle}}</text>
+        <text class="info-desc">{{moreInfoContent}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部导航占位 -->
+  <view class="bottom-nav-placeholder"></view>
+</view>
+
+
+<!-- 入会管理要求告知窗口 -->
+<view class="agreement-modal" wx:if="{{showAgreementModal}}">
+  <view class="modal-mask" bindtap="hideAgreementModal"></view>
+  <view class="modal-content" catchtap="stopPropagation">
+    <view class="modal-header">
+      <text class="modal-title">入会管理要求</text>
+    </view>
+    <view class="modal-body">
+      <scroll-view class="agreement-content" scroll-y>
+        <text class="agreement-text">
+（1）申请人须确保所提交的全部信息真实、准确，如有虚假，相应责任由申请人自行承担。
+
+（2）会员须严格遵守国家法律法规，拥护中国共产党的领导。
+
+（3）联盟原则上不收取会费。为促进联盟内部资源共享与学术交流，会员需义务提供三次或者以上的公开或者不公开的专题报告或学术报告。
+
+（4）会员有权参加联盟组织的各项活动，有权优先获得技术服务、科技公关、项目推广等机会。
+        </text>
+      </scroll-view>
+      <view class="agreement-checkbox">
+        <checkbox checked="{{agreementRead}}" bindtap="toggleAgreementRead" />
+        <text class="checkbox-label">我已阅读并同意以上入会管理要求</text>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <button class="btn-cancel" bindtap="hideAgreementModal">取消</button>
+      <button class="btn-confirm" bindtap="confirmAgreement" disabled="{{!agreementRead}}">确认注册</button>
+    </view>
+  </view>
+</view>
+
+<!-- 秘书处弹窗 -->
+<view class="modal-mask {{showSecretaryModal ? 'active' : ''}}" bindtap="hideSecretaryModal" wx:if="{{showSecretaryModal}}" catchtouchmove="stopPropagation">
+  <view class="modal-dialog secretary-dialog" catchtap="stopPropagation" catchtouchmove="stopPropagation">
+    <view class="modal-header">
+      <text class="modal-title">秘书处联系方式</text>
+    </view>
+    <view class="modal-content">
+      <view class="contact-info">
+        <view class="contact-item">
+          <text class="contact-label">秘书长：何忠成</text>
+        </view>
+        <view class="contact-item">
+          <text class="contact-detail">联系电话：18917686962（同微信号）/18616339102</text>
+        </view>
+        <view class="contact-item">
+          <text class="contact-detail">邮箱：hezhongcheng_sh@163.com</text>
+        </view>
+        <view class="contact-divider"></view>
+        <view class="contact-item">
+          <text class="contact-label">副秘书长：陈艳雨</text>
+        </view>
+        <view class="contact-item">
+          <text class="contact-detail">联系电话：18017851320（同微信号）</text>
+        </view>
+        <view class="contact-item">
+          <text class="contact-detail">邮箱：15207143348@163.com</text>
+        </view>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <button class="modal-btn btn-close" bindtap="hideSecretaryModal">关闭</button>
+    </view>
+  </view>
+</view>
+
+<!-- 底部导航栏 -->
+<view class="bottom-navigation">
+  <view class="nav-item" bindtap="navigateToHome">
+    <view class="nav-icon-custom">🏠</view>
+    <text class="nav-text">首页</text>
+  </view>
+  <view class="nav-item" bindtap="navigateToAlliance">
+    <view class="nav-icon-custom">📊</view>
+    <text class="nav-text">联盟介绍</text>
+  </view>
+  <view class="nav-item" bindtap="navigateToActivities">
+    <view class="nav-icon-custom">📅</view>
+    <text class="nav-text">活动详情</text>
+  </view>
+
+</view>

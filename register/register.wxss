@@ -1,0 +1,221 @@
+/* register.wxss */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #87CEEB 0%, #98FB98 50%, #87CEEB 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50rpx 30rpx;
+}
+
+.register-form {
+  background-color: white;
+  border-radius: 30rpx;
+  padding: 60rpx 50rpx;
+  width: 100%;
+  max-width: 600rpx;
+  box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #2C3E50;
+  margin-bottom: 60rpx;
+}
+
+.form-group {
+  margin-bottom: 40rpx;
+}
+
+.form-label {
+  display: block;
+  font-size: 28rpx;
+  color: #34495E;
+  margin-bottom: 20rpx;
+  font-weight: 500;
+}
+
+.form-label.required::after {
+  content: "*";
+  color: #E74C3C;
+  margin-left: 5rpx;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #F8F9FA;
+  border: 2rpx solid #E9ECEF;
+  border-radius: 25rpx;
+  padding: 25rpx 30rpx;
+  font-size: 28rpx;
+  color: #2C3E50;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #5DADE2;
+  background-color: white;
+}
+
+.gender-group {
+  display: flex;
+  gap: 40rpx;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  font-size: 28rpx;
+  color: #2C3E50;
+}
+
+.picker-view {
+  background-color: #F8F9FA;
+  border: 2rpx solid #E9ECEF;
+  border-radius: 25rpx;
+  padding: 25rpx 30rpx;
+  font-size: 28rpx;
+  color: #2C3E50;
+}
+
+.upload-btn {
+  background-color: #E8F4FD;
+  color: #5DADE2;
+  border: 2rpx dashed #5DADE2;
+  border-radius: 15rpx;
+  padding: 30rpx;
+  font-size: 28rpx;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50rpx;
+}
+
+.uploaded-image {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.uploaded-image image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #E9ECEF;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30rpx;
+  margin-top: 60rpx;
+}
+
+.form-buttons button {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 25rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #5DADE2;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #BDC3C7;
+  color: #2C3E50;
+  border: none;
+}
+
+.btn-primary[loading] {
+  background-color: #85C1E9;
+}
+
+/* 隐私政策弹窗样式 */
+.privacy-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.privacy-modal {
+  background-color: white;
+  border-radius: 30rpx;
+  width: 80%;
+  max-width: 600rpx;
+  max-height: 70vh;
+  overflow: hidden;
+  box-shadow: 0 20rpx 60rpx rgba(0, 0, 0, 0.3);
+}
+
+.privacy-header {
+  background-color: #5DADE2;
+  padding: 40rpx;
+  text-align: center;
+}
+
+.privacy-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.privacy-content {
+  padding: 40rpx;
+  max-height: 400rpx;
+  overflow-y: auto;
+}
+
+.privacy-text {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #2C3E50;
+  white-space: pre-line;
+}
+
+.privacy-buttons {
+  display: flex;
+  border-top: 2rpx solid #ffffff;
+}
+
+.privacy-buttons button {
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: none;
+  font-size: 32rpx;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.privacy-btn-secondary {
+  background-color: #BDC3C7;
+  color: #2C3E50;
+}
+
+.privacy-btn-primary {
+  background-color: #5DADE2;
+  color: white;
+}

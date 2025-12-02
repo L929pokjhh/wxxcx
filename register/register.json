@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "用户注册",
+  "navigationBarBackgroundColor": "#87CEEB",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#87CEEB",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": false
+}
