@@ -1,0 +1,1 @@
+_id,_openid,birthDate,createTime,gender,graduateDate,major,name,phone,referralCode,registrationId,school,status,updateTime,uploadImageUrl,willingness,workUnit
