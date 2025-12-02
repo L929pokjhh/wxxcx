@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "联盟介绍",
+  "navigationBarBackgroundColor": "#87CEEB",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f8f9fa",
+  "enablePullDownRefresh": true
+}

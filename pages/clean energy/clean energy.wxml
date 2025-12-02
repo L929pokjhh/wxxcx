@@ -1,0 +1,161 @@
+<!--pages/clean energy.wxml-->
+<!-- pages/clean-energy/clean-energy.wxml -->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="title">同心济世博士联盟-清洁能源专委会</view>
+        <view class="title">服务清单</view>
+    
+  </view>
+  
+  <!-- 第一部分：公益推广培训课程 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（一）公益推广培训课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">课程名称</view>
+        <view class="col-3" style="width: 190rpx; display: flex; box-sizing: border-box">时长</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">《清洁能源基础入门》</view>
+          <view class="course-content">课程内容：介绍清洁能源定义、涵盖类别（太阳能、风能、水能、生物质能、地热能等），阐述全球气候危机下清洁能源发展的必要性，讲解能源生产到消费全链条中清洁能源技术应用层级。</view>
+        </view>
+        <view class="col-3" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">《政策法规解读》</view>
+          <view class="course-content">课程内容：梳理国内外清洁能源补贴政策、碳交易机制，分析项目投融资模式,解读相关政策法规对行业发展的影响。</view>
+        </view>
+        <view class="col-3" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">《清洁能源与双碳目标解读》</view>
+          <view class="course-content">课程内容：解析"碳达峰、碳中和"目标内涵，阐述清洁能源在双碳目标实现中的核心作用，介绍各行业清洁能源替代路径与案例。</view>
+        </view>
+        <view class="col-3" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第二部分：实战课程 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（二）实战课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2" style="height: 65rpx; display: block; box-sizing: border-box">服务专项</view>
+        <view class="col-3" style="width: 190rpx; display: flex; box-sizing: border-box">形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">《光伏系统安装与运维实战》</view>
+          <view class="course-content">课程内容：光伏组件安装调试实操教学,逆变器参数配置讲解与实践,光伏系统日常运维要点与故障排查训练。</view>
+        </view>
+        <view class="col-3"style="width: 166rpx; display: flex; box-sizing: border-box" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">《风力发电技术与故障诊断实战》</view>
+          <view class="course-content">课程内容：风电机组原理与构造讲解,风机故障诊断方法与实践,风力发电场运行管理。</view>
+        </view>
+        <view class="col-3"style="width: 166rpx; display: flex; box-sizing: border-box" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">《生物质能项目运营管理实战》</view>
+          <view class="course-content">课程内容：生物质原料收集与预处理技术实操，生物质发电/供热设备运行调控，生物质能项目环保达标管理与成本控制。</view>
+        </view>
+        <view class="col-3"style="width: 166rpx; display: flex; box-sizing: border-box" style="width: 200rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">4</view>
+        <view class="col-2">
+          <view class="course-title">《储能系统集成与调试实战》</view>
+          <view class="course-content" style="width: 391rpx; display: block; box-sizing: border-box">课程内容：锂电池储能系统设计与集成，储能变流器调试技术，储能系统与电网协同运行控制实操，储能系统安全运维规范。</view>
+        </view>
+        <view class="col-3" style="width: 335rpx; display: flex; box-sizing: border-box">4个课时</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 106rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">5</view>
+        <view class="col-2" >
+        <view class="course-title">《氢能技术应用实战》</view>
+          <view class="course-content" style="width: 391rpx; display: block; box-sizing: border-box">课程内容：氢能制备(电解水制氢)设备操作,氢燃料电池系统组装与测试,氢能储存与运输安全技术实操。</view>
+        </view>
+        <view class="col-3"style="width: 166rpx; display: flex; box-sizing: border-box" style="width: 335rpx; display: flex; box-sizing: border-box">4个课时</view> 
+        </view>
+      </view>
+    </view>
+  
+  
+  <!-- 第三部分：项目咨询与服务清单 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">（三）项目咨询与服务清单</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1" style="width: 120rpx; display: flex; box-sizing: border-box">序号</view>
+        <view class="col-2">项目名称</view>
+        <view class="col-3" style="width: 210rpx; display: flex; box-sizing: border-box; height: 65rpx">服务形式</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 105rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">1</view>
+        <view class="col-2">
+          <view class="course-title">清洁能源项目可行性研究</view>
+          <view class="course-content">服务内容：对太阳能、风能、生物质能等清洁能源项目进行技术、经济、环境等多方面可行性分析，出具详细可行性研究报告。</view>
+        </view>
+        <view class="col-3"style="width: 185rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 105rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">2</view>
+        <view class="col-2">
+          <view class="course-title">能源管理体系建设咨询</view>
+          <view class="course-content">服务内容：帮助企业建立完善的能源管理体系，包括能源审计、制定节能目标与措施、建立能源管理流程与制度。</view>
+        </view>
+        <view class="col-3"style="width: 185rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 105rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">3</view>
+        <view class="col-2">
+          <view class="course-title">清洁能源项目规划设计服务</view>
+          <view class="course-content">服务内容：根据项目所在地资源条件(光照、风速、生物质资源等),制定个性化清洁能源项目规划方案,包括技术选型、设备配置、布局设计等。</view>
+        </view>
+        <view class="col-3"style="width: 185rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 105rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">4</view>
+        <view class="col-2">
+          <view class="course-title">碳资产管理与减排咨询</view>
+          <view class="course-content">服务内容：企业碳足迹核算与盘查,碳资产开发与管理策略制定，减排技术路径规划与实施指导，碳交易市场参与辅导。</view>
+        </view>
+        <view class="col-3"style="width: 185rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+      <view class="table-row">
+        <view class="col-1"style="width: 105rpx; display: flex; box-sizing: border-box" style="width: 120rpx; display: flex; box-sizing: border-box">5</view>
+        <view class="col-2">
+          <view class="course-title">清洁能源技术升级改造咨询</view>
+          <view class="course-content">服务内容：对现有清洁能源项目进行技术评估，识别技术短板与升级空间，提供技术改造方案与设备更新建议,指导改造实施与效果评估。</view>
+        </view>
+        <view class="col-3"style="width: 185rpx; display: flex; box-sizing: border-box" style="width: 210rpx; display: flex; box-sizing: border-box">项目服务</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    <text>同心济世博士联盟-清洁能源专委会 © 2025</text>
+  </view>
+</view>

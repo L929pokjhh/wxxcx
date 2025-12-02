@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="logo">
+      <text class="logo-text">同心济世博士联盟</text>
+    </view>
+    <view class="subtitle">同心聚智，济世兴邦</view>
+  </view>
+
+  <view class="content">
+    <view class="welcome-card">
+      <view class="card-title">欢迎加入博士联盟</view>
+      <view class="card-content">
+        <text>同心济世博士联盟成立于2021年12月3日，是聚焦“高端智库+人才平台”的创新型组织，以“同心聚智，济世兴邦”为核心宗旨，整合跨学科高端人才资源，打通“技术研发—成果转化—产业落地”全链路，为政府、企业、高校提供专业化、定制化服务，助力科技创新与产业升级</text>
+      </view>
+    </view>
+
+    <view class="action-buttons">
+      <button class="btn-primary register-btn" bindtap="goToRegister">
+        立即注册
+      </button>
+      <button class="btn-secondary info-btn" bindtap="viewInfo">
+        了解更多
+      </button>
+    </view>
+
+    <!-- 入会管理要求告知窗口 -->
+    <view class="agreement-modal" wx:if="{{showAgreementModal}}">
+      <view class="modal-mask"></view>
+      <view class="modal-content">
+        <view class="modal-header">
+          <text class="modal-title">入会管理要求</text>
+        </view>
+        <view class="modal-body">
+          <scroll-view class="agreement-content" scroll-y>
+            <text class="agreement-text">
+1.申请人须确保所提交的全部信息真实、准确,如有虚假,相应责任由申请人自行承担。
+
+2.会员须严格遵守国家法律法规,拥护中国共产党的领导。
+
+3.联盟原则上不收取会费。为促进联盟内部资源共享与学术交流,会员需义务提供三次或者以上的公开或者不公开的专题报告或学术报告。
+
+4.会员有权参加联盟组织的各项活动,有权优先获得技术服务、科技公关、项目推广等机会。
+
+            </text>
+          </scroll-view>
+          <view class="agreement-checkbox">
+            <checkbox checked="{{agreementRead}}" bindtap="toggleAgreementRead" />
+            <text class="checkbox-label">我已阅读并同意以上入会管理要求</text>
+          </view>
+        </view>
+        <view class="modal-footer">
+          <button class="btn-cancel" bindtap="cancelAgreement">取消</button>
+          <button class="btn-confirm" bindtap="confirmAgreement" disabled="{{!agreementRead}}">确认注册</button>
+        </view>
+      </view>
+    </view>
+    <view class="features">
+      
+      
+      <view class="feature-item">
+        
+        
+        
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>© 2025 同心济世博士联盟</text>
+  </view>
+</view>

@@ -1,0 +1,244 @@
+<!-- pages/ai-committee/ai-committee.wxml -->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="title">同心济世博士联盟-AI人工智能专委会</view>
+    <view class="title">服务清单</view>
+  </view>
+  
+  <!-- 第一部分：公益推广培训课程 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">
+      <text class="icon">（一）公益推广培训课程</text>
+      
+    </view>
+    <view class="training-table">
+      <view class="training-header">
+        <view class="training-col training-col-1" style="width: 127rpx; display: flex; box-sizing: border-box; height: 74rpx">序号</view>
+        <view class="training-col training-col-2" style="width: 225rpx; display: flex; box-sizing: border-box">课程名称</view>
+        <view class="training-col training-col-3" style="width: 395rpx; display: flex; box-sizing: border-box">课程内容</view>
+        <view class="training-col training-col-4"style="width: 100rpx; display: flex; box-sizing: border-box" style="width: 116rpx; display: flex; box-sizing: border-box">时长</view>
+      </view>
+      <view class="training-row">
+        <view class="col-3" style="width: 162rpx; display: flex; box-sizing: border-box; height: 220rpx">1</view>
+        <view class="col-3" style="width: 306rpx; display: flex; box-sizing: border-box; height: 220rpx">《AI素养公益课程 》</view>
+        <view class="training-col training-col-3" style="width: 304rpx; display: flex; box-sizing: border-box">
+          <view class="course-item">AI 基础素养（普及方向）</view>
+          <view class="course-item">AI 工具实战（应用方向）</view>
+          <view class="course-item">AI 技术原理（进阶方向）</view>
+          <view class="course-item">AI 与行业结合（行业方向）</view>
+        </view>
+        <view class="col-3" style="width: 135rpx; display: flex; box-sizing: border-box">8个课时</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第二部分：项目咨询与服务清单 -->
+  <view class="section" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="section-title">
+      <text class="icon">（二）项目咨询与服务清单</text>
+    </view>
+    
+    <!-- 一、战略与规划咨询 -->
+    <view class="subsection">
+      <view class="subsection-title">一、战略与规划咨询</view>
+      <view class="table">
+        <view class="table-header">
+          <view class="col-1" style="width: 187rpx; display: flex; box-sizing: border-box">服务类别</view>
+          <view class="col-2">服务项目</view>
+          <view class="col-3" style="height: 85rpx; display: flex; box-sizing: border-box; width: 290rpx">服务内容</view>
+        </view>
+        
+        <!-- AI战略顶层设计 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">AI战略顶层设计</view>
+          <view class="col-2">行业趋势研究</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">提供全球与本地AI产业发展态势分析,形成行业趋势研究报告</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">战略路线图规划</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">制定企业/机构3-5年AI发展蓝图与实施路线图</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">转型可行性研究</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">分析企业数字化基础与AI转型条件,形成可行性研究报告</view>
+        </view>
+        
+        <!-- 政策与合规咨询 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">政策与合规咨询</view>
+          <view class="col-2">政策解读与对接</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">提供国家/地方AI政策解读，协助政策申报与对接</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">数据合规与隐私保护</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">设计数据合规体系,GDPR/数据跨境合规咨询</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">AI伦理与治理</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">构建算法透明性、可解释性与伦理风险控制框架</view>
+        </view>
+        
+        <!-- 项目可行性研究 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">项目可行性研究</view>
+          <view class="col-2">技术可行性评估</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">评估项目所需AI算法与平台的可行性</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">成本效益与ROI分析</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">提供投资回报率预测、预算规划</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">风险评估与应对</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">构建风险识别、监控与缓解机制</view>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 二、技术咨询与开发服务 -->
+    <view class="subsection">
+      <view class="subsection-title">二、技术咨询与开发服务</view>
+      <view class="table">
+        <view class="table-header">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">服务类别</view>
+          <view class="col-2">服务项目</view>
+          <view class="col-3" style="height: 85rpx; display: flex; box-sizing: border-box; width: 290rpx">服务内容</view>
+        </view>
+        
+        <!-- AI算法与模型研发 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">AI算法与模型研发</view>
+          <view class="col-2">模型定制开发</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">根据业务需求开发分类、预测、推荐等模型</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">NLP应用</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">聊天机器人、文本摘要、舆情分析、智能客服</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">CV应用</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">图像识别、目标检测、视频分析、OCR</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">语音AI</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">语音识别、语音合成、声纹识别</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">大模型应用</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">大语言模型/多模态大模型的二次开发与微调</view>
+        </view>
+        
+        <!-- 平台与系统集成 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">平台与系统集成</view>
+          <view class="col-2">AI中台建设</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">构建统一AI能力中心，支持多业务调用</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">数据与AI融合</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">大数据处理、数据清洗与特征工程</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">系统部署与运维</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">云端/边缘部署,提供AI模型上线与持续监控</view>
+        </view>
+        
+        <!-- 行业解决方案 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">行业解决方案</view>
+          <view class="col-2">医疗</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">影像识别、药物研发辅助、智能导诊</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">教育</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">个性化学习推荐、智能考试评测</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">金融</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">信贷风控、反欺诈检测、智能投顾</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">制造</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">缺陷检测、预测性维护、生产优化</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">城市治理</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">智能交通调度、视频安防、能耗优化</view>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 三、科研与创新支持 -->
+    <view class="subsection">
+      <view class="subsection-title">三、科研与创新支持</view>
+      <view class="table">
+        <view class="table-header">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">服务类别</view>
+          <view class="col-2">服务项目</view>
+          <view class="col-3" style="height: 85rpx; display: flex; box-sizing: border-box; width: 290rpx">服务内容</view>
+        </view>
+        
+        <!-- 联合科研与课题申报 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">联合科研与课题申报</view>
+          <view class="col-2">国家级科研项目</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">协助撰写与申报国家自然科学基金/重点研发计划</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">省部级项目</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">联合申报地方政府或行业专项课题</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">企业合作研发</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">定制企业联合实验室、研发孵化</view>
+        </view>
+        
+        <!-- 前沿技术探索 -->
+        <view class="table-row service-category">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box">前沿技术探索</view>
+          <view class="col-2">大模型与生成式AI</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">AIGC、代码生成、智能体(Agent)研发</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2" style="width: 222rpx; display: flex; box-sizing: border-box">边缘AI与IoT</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">低功耗AI芯片与IoT智能应用</view>
+        </view>
+        <view class="table-row">
+          <view class="col-1"style="width: 187rpx; display: flex; box-sizing: border-box"></view>
+          <view class="col-2">AGI与人机协同</view>
+          <view class="col-3" style="width: 290rpx; display: flex; box-sizing: border-box">多智能体协同、类脑智能探索</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    <text>同心济世博士联盟-AI人工智能专委会 © 2025</text>
+  </view>
+</view>

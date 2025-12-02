@@ -1,0 +1,61 @@
+<!--committee.wxml-->
+<view class="container">
+
+  <!-- 专委会网格 -->
+  <view class="function-cards">
+    <view class="card-grid">
+      <!--汽车产业和技术专委会1 -->
+      <view class="function-card card-green-blue" bindtap="navigateToPage" data-page="automobile industry" style="width: 299rpx; display: flex; box-sizing: border-box">
+        <text class="card-title">汽车产业与技术\n专委会</text>
+        
+      </view>
+      <!--人工智能专委会2 -->
+      <view class="function-card card-colour-3" bindtap="navigateToPage" data-page="artificial intelligence">
+        <text class="card-title">人工智能专委会</text>
+      </view>
+      <!--新材料专委会3 -->
+      <view class="function-card card-colour-6" bindtap="navigateToPage" data-page="new material">
+        <text class="card-title">新材料专委会</text>
+      </view>
+      <!--智慧农业专委会4 -->
+      <view class="function-card card-colour-7" bindtap="navigateToPage" data-page="intelligent agriculture">
+        <text class="card-title">智慧农业专委会</text>
+      </view>
+      <!--投融资专委会5 -->
+      <view class="function-card card-colour-8" bindtap="navigateToPage" data-page="investment and financing">
+        <text class="card-title">投融资专委会</text>
+      </view>
+      <!--低空经济专委会6-->
+      <view class="function-card card-colour-9" bindtap="navigateToPage" data-page="low altitude economy">
+        <text class="card-title">低空经济专委会</text>
+      </view>
+      <!--清洁能源专委会7 -->
+      <view class="function-card card-colour-10" bindtap="navigateToPage" data-page="clean energy">
+        <text class="card-title">清洁能源专委会</text>
+      </view>
+      <!--经济法制专委会8 -->
+      <view class="function-card card-colour-12" bindtap="navigateToPage" data-page="economic legal system">
+        <text class="card-title">经济法制专委会</text>
+      </view>
+      <!--艺术专委会9 bindtap="navigateToPage"-->
+      <view class="function-card card-colour-13"  data-page="art committee">
+        <text class="card-title">艺术专委会</text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 空状态提示 -->
+  <view wx:if="{{committees.length === 0}}" class="empty-state">
+    <text class="empty-text">暂无匹配的专委会</text>
+    <button class="reset-btn" bindtap="clearSearch">重置搜索</button>
+  </view>
+
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 底部占位 -->
+  <view class="bottom-placeholder"></view>
+</view>

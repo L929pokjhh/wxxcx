@@ -1,0 +1,70 @@
+<!--alliance.wxml-->
+<view class="container">
+  <!-- 搜索框 
+  <view class="search-section">
+    <view class="search-bar">
+      <text class="search-icon">🔍</text>
+      <input class="search-input" placeholder="请输入关键字" bindinput="onSearchInput" value="{{searchText}}" bindconfirm="performSearch"/>
+      <text class="clear-icon" wx:if="{{searchText}}" bindtap="clearSearch">✕</text>
+    </view>
+  </view>-->
+
+  <!-- 联盟标题 -->
+  <view class="alliance-header">
+    <text class="alliance-title">同心济世博士联盟</text>
+  </view>
+
+  <!-- 联盟展示图片 -->
+  <view class="alliance-images">
+    <view class="image-container" wx:for="{{allianceImages}}" wx:key="id" wx:for-index="index">
+      <image 
+        class="alliance-image" 
+        src="{{item.url}}" 
+        mode="aspectFill" 
+        lazy-load="{{true}}"
+        bindtap="previewImage" 
+        data-url="{{item.url}}"
+        binderror="onImageError"
+        data-index="{{index}}"
+      />
+    </view>
+  </view>
+
+  <!-- 业务内容 -->
+  <view class="business-section" style="position: relative; left: 0rpx; top: -764rpx">
+    <text class="section-title" style="position: relative; left: 0rpx; top: -91rpx"></text>
+    
+    <view class="business-grid">
+      <view 
+        class="business-card" 
+        wx:for="{{businessCards}}" 
+        wx:key="id"
+        bindtap="onBusinessCardTap"
+        data-id="{{item.id}}"
+        style="background: {{item.bgColor}}; width: 322rpx; height: 295rpx; display: flex; box-sizing: border-box"
+      >
+        <text class="card-icon">{{item.icon}}</text>
+        <text class="card-title" style="width: 239rpx; height: 64rpx; display: block; box-sizing: border-box">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部导航占位 -->
+  <view class="bottom-nav-placeholder"></view>
+</view>
+
+<!-- 底部导航栏 -->
+<view class="bottom-navigation">
+  <view class="nav-item" bindtap="navigateToHome">
+    <view class="nav-icon-custom">🏠</view>
+    <text class="nav-text">首页</text>
+  </view>
+  <view class="nav-item nav-active">
+    <view class="nav-icon-custom">📊</view>
+    <text class="nav-text active">联盟介绍</text>
+  </view>
+  <view class="nav-item" bindtap="navigateToActivities">
+    <view class="nav-icon-custom">📅</view>
+    <text class="nav-text">活动详情</text>
+  </view>
+</view>

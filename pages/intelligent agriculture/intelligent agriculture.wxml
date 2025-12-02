@@ -1,0 +1,69 @@
+<!--pages/intelligent agriculture.wxml-->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header" style="width: 720rpx; display: block; box-sizing: border-box">
+    <view class="title">同心济世博士联盟-智慧农业专委会</view>
+    <view class="title">服务清单</view>
+  </view>
+  
+  <!-- 第一部分：公益推广培训课程 -->
+  <view class="section">
+    <view class="section-title">（一）公益推广培训课程</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1">序号</view>
+        <view class="col-2">课程名称</view>
+        <view class="col-3"style="width: 162rpx; display: block; box-sizing: border-box" style="width: 200rpx; display: block; box-sizing: border-box">时长</view>
+      </view>
+      <view class="table-row" wx:for="{{publicCourses}}" wx:key="id">
+        <view class="col-1">{{item.id}}</view>
+        <view class="col-2">{{item.name}}</view>
+        <view class="col-3" style="width: 200rpx; display: block; box-sizing: border-box">{{item.duration}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第二部分：市场服务 -->
+  <view class="section">
+    <view class="section-title">（二）市场服务</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1">序号</view>
+        <view class="col-2">服务专项</view>
+        <view class="col-3"style="width: 162rpx; display: block; box-sizing: border-box"style="width: 181rpx; display: block; box-sizing: border-box" style="width: 210rpx; display: block; box-sizing: border-box">形式</view>
+      </view>
+      <view class="table-row" wx:for="{{marketServices}}" wx:key="id">
+        <view class="col-1">{{item.id}}</view>
+        <view class="col-2">{{item.name}}</view>
+        <view class="col-3"style="width: 162rpx; display: block; box-sizing: border-box" style="width: 210rpx; display: block; box-sizing: border-box">{{item.form}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 第三部分：项目咨询与服务清单 -->
+  <view class="section">
+    <view class="section-title">（三）项目咨询与服务清单</view>
+    <view class="table">
+      <view class="table-header">
+        <view class="col-1">序号</view>
+        <view class="col-2">项目名称</view>
+        <view class="col-3"style="width: 181rpx; display: block; box-sizing: border-box" style="width: 210rpx; display: block; box-sizing: border-box">服务形式</view>
+      </view>
+      <view class="table-row" wx:for="{{services}}" wx:key="id">
+        <view class="col-1">{{item.id}}</view>
+        <view class="col-2">{{item.name}}</view>
+        <view class="col-3"style="width: 181rpx; display: block; box-sizing: border-box" style="width: 210rpx; display: block; box-sizing: border-box">{{item.form}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    <text>同心济世博士联盟-智慧农业专委会 © 2025</text>
+  </view>
+</view>

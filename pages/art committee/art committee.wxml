@@ -1,0 +1,41 @@
+<!--艺术专委会页面-->
+<view class="container">
+  <view class="header">
+    <view class="back-btn" bindtap="goBack">
+      <text class="back-icon">←</text>
+      <text class="back-text">返回</text>
+    </view>
+    <view class="title">艺术专委会</view>
+  </view>
+
+  <view class="content">
+    <view class="committee-info">
+      <view class="info-card">
+        <view class="info-title">专委会介绍</view>
+        <view class="info-content">
+          <text>艺术专委会致力于推动艺术与科技的融合发展，汇聚艺术领域的专家学者，促进艺术创新与文化交流。</text>
+        </view>
+      </view>
+
+      <view class="contact-info">
+        <view class="contact-title">联系我们</view>
+        <view class="contact-content">
+          <text>获取更多详细资料，请联系：</text>
+          <view class="contact-item">
+            <text class="contact-label">微信：</text>
+            <text class="contact-value">chenchenchen_000</text>
+          </view>
+          <view class="contact-item">
+            <text class="contact-label">电话：</text>
+            <text class="contact-value">18917686962</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 联系我们按钮 -->
+  <view class="contact-section">
+    <button class="contact-btn" bindtap="showContactModal">联系我们</button>
+  </view>
+</view>

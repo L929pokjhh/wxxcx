@@ -1,0 +1,77 @@
+/* pages/example/index.wxss */
+.container {
+  padding: 40rpx;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 40rpx;
+}
+
+.description {
+  font-size: 32rpx;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.features {
+  background-color: #ffffff;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 60rpx;
+}
+
+.subtitle {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30rpx;
+  display: block;
+}
+
+.feature-item {
+  margin-bottom: 20rpx;
+}
+
+.feature-item text {
+  font-size: 28rpx;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #87CEEB, #4a90e2);
+  color: #ffffff;
+  padding: 24rpx 60rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  box-shadow: 0 6rpx 20rpx rgba(135, 206, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:active {
+  transform: translateY(2rpx);
+  box-shadow: 0 4rpx 15rpx rgba(135, 206, 235, 0.2);
+}

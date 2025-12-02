@@ -1,0 +1,49 @@
+<!--pages/Former site of Qiushi Academy.wxml-->
+<view class="container">
+  <!-- 页面头部 -->
+  <view class="header" style="width: 622rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <view class="main-title">同心济世求是书院</view>
+    <view class="sub-title">以文化赋能商业，以智慧服务社会</view>
+  </view>
+
+  <!-- 内容模块 -->
+  <view class="content-section">
+    <!-- 企业家赋能模块 -->
+    <view class="module">
+      <view class="module-title">企业家赋能模块</view>
+      <view class="core-direction">核心方向：战略破局· 利润增长· 团队驾驭</view>
+      <view class="module-content">
+        <text class="content-item">战略与决策</text>
+        <text class="content-item">组织与领导力</text>
+        <text class="content-item">资本与风险</text>
+        <text class="content-item">合规发展</text>
+        <text class="content-item">危机预防与应对</text>
+        <text class="content-item">文化赋能</text>
+      </view>
+    </view>
+
+    <!-- 公职人员赋能模块 -->
+    <view class="module">
+      <view class="module-title">公职人员赋能模块</view>
+      <view class="core-direction">核心方向：政策落地· 治理创新· 危机应对</view>
+      <view class="module-content">
+        <text class="content-item">经济与产业</text>
+        <text class="content-item">公共管理</text>
+        <text class="content-item">执行力与协作</text>
+      </view>
+    </view>
+
+    <!-- 通用能力赋能模块 -->
+    <view class="module">
+      <view class="module-title">通用能力赋能模块</view>
+      <view class="core-direction">核心方向：底层能力 · 跨界思维 · 个人效能</view>
+      <view class="module-content">
+        <text class="content-item">政策与沟通</text>
+        <text class="content-item">工具与效率</text>
+        <text class="content-item">可持续发展</text>
+        <text class="content-item">技术研发管理</text>
+        <text class="content-item">法律与财税</text>
+      </view>
+    </view>
+  </view>
+</view>
